@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Open Sans Condensed', sans-serif;
+}
+
+.header, .footer{
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 0, 0);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  width: 23%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.menu{
+  display: flex;
+}
+.menu li{
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  font-weight: 900;
+  padding: 40px;
+}
+.menu li a:hover{
+  color: rgb(245, 255, 52);
+}
+.banner{
+  background: url(../image/foto1.jpg);
+}
+.container3 {
+  background: url(../image/foto2.jpg);
+}
+.container4{
+  background: url(../image/fundolanche.jpg);
+}
+.container5{
+  background: url(../image/fundo2.jpg)
+}
+.banner, .container3, .container4, .container5{
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 150px;
+}
+
+.transparente{
+  width: 25%;
+  height: 300px;
+  /* border: 1px solid #eee; */
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  /* background: rgb(0, 0, 0); */
+}
+.transparente h1{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+}
+.container, .container2{
+  width: 100%;
+  height: auto;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background: rgb(66, 66, 66);
+}
+.texto, .texto2{
+  font-size: 25px;
+  text-align:justify;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  color: rgb(255, 255, 255);
+}
+.container img {
+  width: 80%;
+  height: auto;
+  float: right;
+}
+.container2 img {
+  width: 80%;
+  height: auto;
+  float: left;
+}
+
+.footer p{
+  color: rgb(255, 255, 255);
+}
+
+.redes a {
+  font-size: 30px;
+  color:rgb(255, 255, 255);
+  padding: 0 10px;
+}
+.redes a:hover{
+  color: rgb(245, 255, 52);
+}
+.footer{
+  padding: 0 100px;
+}
+@media (max-width:720px) {
+  .header{
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+.container3{
+  justify-content: center;
+}
+.texto3 {
+  width: 50%;
+  height: 370px;
+  /* border: 1px solid rgb(255, 255, 255); */
+  margin-left: 120px;
+  padding: 20px 20px 0 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.texto3 p{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: justify;
+  width: 900;
+}
+.texto3 h1 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.frase h1{
+  text-align: center;
+  font-size: 50px;
+  padding: 15px 30px;
+  margin: 10px 0px 10px 90px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  color: rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+.foto-mapa img{
+  width: 40%;
+}
+.container4{
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo{
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 150px 0 0 90px;;
+}
+.titulo h1{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  width: 900;
+}
+/* -----------formulario-contato---------- */
+
+
+.formulario-contato{
+  width: 30%;
+  height: 525px;
+  margin-right:650px;
+  padding: 0px;
+  float: left;
+  border: none;
+  outline: none;
+}
+
+#dados input[type="text"],
+#dados input[type="email"],
+#dados input[type="tel"]{
+  width:100%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border: 0;
+}
+
+#dados textarea{
+  width: 100%;
+  height: 130px;
+  font-size: 20px;
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  resize: none;
+}
+label{
+  font-size: 25px;
+  font-weight: 700;
+}
+#dados button{
+  font-weight:900;
+  font-size: 20px;
+  margin: 10px;
+  padding:5px 10px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background:rgb(255, 246, 27);
+  float: right;
+}
+.apps{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.titulo2{
+  /* border: 1px solid rgb(255, 255, 255); */
+  width: 30%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 100px 0; */
+  margin-left: 90px;
+}
+.titulo2 h2{
+  color: rgb(255, 255, 255);
+  font-size:70px;
+  padding:20px;
+}
